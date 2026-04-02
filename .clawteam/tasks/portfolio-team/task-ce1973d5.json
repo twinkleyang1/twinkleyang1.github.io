@@ -1,0 +1,16 @@
+{
+  "id": "ce1973d5",
+  "subject": "网站技术选型",
+  "description": "确定使用纯HTML/CSS/JS构建简洁的GitHub Pages简历站，选择简约主题风格，输出 index.html 骨架",
+  "status": "completed",
+  "priority": "high",
+  "owner": "",
+  "lockedBy": "",
+  "lockedAt": "",
+  "blocks": [],
+  "blockedBy": [],
+  "startedAt": "",
+  "createdAt": "2026-04-02T02:39:16.238663+00:00",
+  "updatedAt": "2026-04-02T02:44:04.412718+00:00",
+  "metadata": {}
+}

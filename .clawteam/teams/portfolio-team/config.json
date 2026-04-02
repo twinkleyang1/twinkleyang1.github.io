@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-team",
+  "description": "GitHub Pages 个人简历网站",
+  "leadAgentId": "ba4d02efe30f",
+  "createdAt": "2026-04-02T02:37:55.264722+00:00",
+  "members": [
+    {
+      "name": "leader",
+      "user": "",
+      "agentId": "ba4d02efe30f",
+      "agentType": "leader",
+      "joinedAt": "2026-04-02T02:37:55.264722+00:00"
+    },
+    {
+      "name": "architect",
+      "user": "",
+      "agentId": "a76850dc19bf",
+      "agentType": "general-purpose",
+      "joinedAt": "2026-04-02T02:40:56.479845+00:00"
+    }
+  ],
+  "budgetCents": 0.0
+}

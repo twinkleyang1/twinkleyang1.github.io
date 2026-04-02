@@ -1,0 +1,18 @@
+{
+  "id": "abde5fe0",
+  "subject": "构建网站内容",
+  "description": "基于简历内容构建完整网站：个人信息、教育背景、研究经历、发表论文、项目经验、技能、联系方式。使用HTML/CSS实现，保持简洁专业风格",
+  "status": "completed",
+  "priority": "high",
+  "owner": "",
+  "lockedBy": "",
+  "lockedAt": "",
+  "blocks": [],
+  "blockedBy": [
+    "ce1973d5"
+  ],
+  "startedAt": "",
+  "createdAt": "2026-04-02T02:39:20.124038+00:00",
+  "updatedAt": "2026-04-02T02:44:19.912526+00:00",
+  "metadata": {}
+}

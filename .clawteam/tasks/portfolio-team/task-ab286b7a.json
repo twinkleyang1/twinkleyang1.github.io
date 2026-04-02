@@ -1,0 +1,16 @@
+{
+  "id": "ab286b7a",
+  "subject": "配置GitHub并发布",
+  "description": "初始化Git仓库，配置GitHub Pages (branch: gh-pages)，推送代码到 GitHub repo: twinkleyang1.github.io，使用token认证",
+  "status": "pending",
+  "priority": "high",
+  "owner": "",
+  "lockedBy": "",
+  "lockedAt": "",
+  "blocks": [],
+  "blockedBy": [],
+  "startedAt": "",
+  "createdAt": "2026-04-02T02:39:23.083493+00:00",
+  "updatedAt": "2026-04-02T02:44:19.919871+00:00",
+  "metadata": {}
+}
