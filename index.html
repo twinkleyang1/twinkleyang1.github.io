@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>杨馥 - 个人简历</title>
+    <title>杨张杰 - 个人简历</title>
     <style>
         :root {
             --primary: #2563eb;
@@ -172,8 +172,19 @@
             margin-bottom: 0.25rem;
         }
 
-        .timeline-header .gpa {
-            font-size: 0.85rem;
+        .honor-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .honor-tag {
+            font-size: 0.75rem;
+            padding: 0.2rem 0.6rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 4px;
             color: var(--text-light);
         }
 
@@ -189,86 +200,57 @@
             margin-bottom: 0.25rem;
         }
 
-        /* Publications */
-        .pub-item {
-            margin-bottom: 1.5rem;
-            padding: 1rem;
+        /* Research */
+        .research-item {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
             background: var(--bg-secondary);
             border-radius: 8px;
             border: 1px solid var(--border);
         }
 
-        .pub-item:last-child {
+        .research-item:last-child {
             margin-bottom: 0;
         }
 
-        .pub-title {
-            font-size: 1rem;
-            font-weight: 600;
-            color: var(--text);
-            margin-bottom: 0.3rem;
-        }
-
-        .pub-authors {
-            font-size: 0.85rem;
-            color: var(--text-light);
-            margin-bottom: 0.3rem;
-        }
-
-        .pub-venue {
-            font-size: 0.85rem;
-            color: var(--primary);
-            font-weight: 500;
-        }
-
-        .pub-highlight {
-            font-size: 0.8rem;
-            color: var(--text-light);
-            margin-top: 0.3rem;
-        }
-
-        /* Projects */
-        .project-item {
-            margin-bottom: 1.5rem;
-        }
-
-        .project-item:last-child {
-            margin-bottom: 0;
-        }
-
-        .project-header {
+        .research-header {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
             flex-wrap: wrap;
             gap: 0.5rem;
-            margin-bottom: 0.3rem;
+            margin-bottom: 0.5rem;
         }
 
-        .project-header h3 {
+        .research-header h3 {
             font-size: 1.05rem;
             font-weight: 600;
         }
 
-        .project-header .links {
-            display: flex;
-            gap: 1rem;
+        .research-header .badge {
+            font-size: 0.75rem;
+            padding: 0.2rem 0.6rem;
+            background: #dbeafe;
+            color: var(--primary-dark);
+            border-radius: 4px;
+            font-weight: 500;
         }
 
-        .project-header a {
-            font-size: 0.85rem;
-            color: var(--primary);
-            text-decoration: none;
-        }
-
-        .project-header a:hover {
-            text-decoration: underline;
-        }
-
-        .project-item p {
+        .research-item p {
             font-size: 0.9rem;
             color: var(--text-light);
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .research-highlights {
+            font-size: 0.875rem;
+            color: var(--text);
+            margin-bottom: 0.75rem;
+        }
+
+        .research-highlights li {
+            margin-bottom: 0.4rem;
+            padding-left: 0.5rem;
         }
 
         .tech-tags {
@@ -280,36 +262,66 @@
         .tech-tag {
             font-size: 0.75rem;
             padding: 0.2rem 0.6rem;
-            background: var(--bg-secondary);
+            background: var(--bg);
             border: 1px solid var(--border);
             border-radius: 4px;
             color: var(--text-light);
         }
 
-        /* Research */
-        .research-item {
-            margin-bottom: 1.5rem;
+        /* Internship */
+        .intern-item {
+            margin-bottom: 2rem;
         }
 
-        .research-item:last-child {
+        .intern-item:last-child {
             margin-bottom: 0;
         }
 
-        .research-item h3 {
-            font-size: 1.05rem;
-            font-weight: 600;
+        .intern-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 0.5rem;
             margin-bottom: 0.3rem;
         }
 
-        .research-item p {
+        .intern-header h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+        }
+
+        .intern-header .company {
+            color: var(--primary);
+            font-size: 0.95rem;
+        }
+
+        .intern-header .period {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        .intern-item p {
             font-size: 0.9rem;
             color: var(--text-light);
+            margin-bottom: 0.75rem;
+        }
+
+        .intern-highlights {
+            font-size: 0.875rem;
+            color: var(--text);
+            margin-bottom: 0.75rem;
+        }
+
+        .intern-highlights li {
+            margin-bottom: 0.4rem;
+            padding-left: 0.5rem;
         }
 
         /* Skills */
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 1.5rem;
         }
 
@@ -372,12 +384,12 @@
 <body>
     <header>
         <div class="container">
-            <h1>杨馥</h1>
-            <p class="subtitle">香港大学计算机科学与工程学院 · 硕士生 (2022-2024)</p>
+            <h1>杨张杰</h1>
+            <p class="subtitle">人工智能 · 大模型应用开发</p>
             <div class="contact-info">
-                <span>📧 <a href="mailto:twinkleyang1@gmail.com">twinkleyang1@gmail.com</a></span>
-                <span>🔗 <a href="https://github.com/twinkleyang1">github.com/twinkleyang1</a></span>
-                <span>📍 香港</span>
+                <span>📧 <a href="mailto:2421843678@qq.com">2421843678@qq.com</a></span>
+                <span>📱 13916068779</span>
+                <span>📍 上海</span>
             </div>
         </div>
     </header>
@@ -385,55 +397,47 @@
     <nav>
         <div class="container">
             <ul>
-                <li><a href="#about">关于</a></li>
-                <li><a href="#education">教育</a></li>
+                <li><a href="#education">教育背景</a></li>
                 <li><a href="#research">研究方向</a></li>
-                <li><a href="#publications">发表论文</a></li>
-                <li><a href="#projects">项目经历</a></li>
-                <li><a href="#skills">技能</a></li>
+                <li><a href="#internship">实习经历</a></li>
+                <li><a href="#skills">个人技能</a></li>
             </ul>
         </div>
     </nav>
 
     <main class="container">
-        <section id="about">
-            <h2>关于</h2>
-            <p class="about-text">
-                我是香港大学计算机科学与工程学院的全日制硕士生，研究方向为大型语言模型（LLM）与多智能体系统。
-                本科毕业于中山大学软件工程专业，在软件工程、自动驾驶、轨迹预测等领域有丰富的研究经验。
-                曾参与多个顶会论文发表，具备扎实的算法基础和良好的科研能力。
-            </p>
-        </section>
-
         <section id="education">
             <h2>教育背景</h2>
             <div class="timeline-item">
                 <div class="timeline-header">
                     <div>
-                        <h3>香港大学（HKU）</h3>
-                        <p class="institution">计算机科学与工程学院 · 授课型硕士</p>
+                        <h3>上海大学</h3>
+                        <p class="institution">人工智能 · 硕士研究生</p>
                     </div>
-                    <span class="period">2022.09 – 2024.06</span>
+                    <span class="period">2024.09 – 2027.06</span>
                 </div>
-                <p class="gpa">GPA: 3.71 / 4.0</p>
-                <ul class="timeline-details">
-                    <li>研究重点：LLM、多智能体系统、人工智能应用</li>
-                    <li>相关课程：人工智能、机器学习、深度学习、计算机视觉</li>
-                </ul>
+                <div class="honor-tags">
+                    <span class="honor-tag">2024学年上海大学硕士三等奖学金</span>
+                    <span class="honor-tag">2025学年上海大学硕士三等奖学金</span>
+                    <span class="honor-tag">数学建模竞赛优胜奖</span>
+                </div>
             </div>
             <br>
             <div class="timeline-item">
                 <div class="timeline-header">
                     <div>
-                        <h3>中山大学（SYSU）</h3>
-                        <p class="institution">软件工程学院 · 工学学士</p>
+                        <h3>上海海事大学</h3>
+                        <p class="institution">计算机科学与技术（卓越工程班）· 本科</p>
                     </div>
-                    <span class="period">2018.09 – 2022.06</span>
+                    <span class="period">2019.09 – 2023.06</span>
                 </div>
-                <p class="gpa">GPA: 3.6 / 4.0</p>
+                <div class="honor-tags">
+                    <span class="honor-tag">上海海事大学优秀毕业论文</span>
+                    <span class="honor-tag">三等奖学金</span>
+                    <span class="honor-tag">上海市大学生创新创业市级项目负责人</span>
+                </div>
                 <ul class="timeline-details">
-                    <li>软件工程专业，主修软件开发与系统架构</li>
-                    <li>相关课程：数据结构与算法、操作系统、计算机网络、数据库</li>
+                    <li>本科毕业设计市级项目《基于多维度多粒度的新冠疫情数据分析》</li>
                 </ul>
             </div>
         </section>
@@ -441,172 +445,128 @@
         <section id="research">
             <h2>研究方向</h2>
             <div class="research-item">
-                <h3>大型语言模型（LLM）与多智能体系统</h3>
-                <p>探索 LLM 在复杂任务分解、推理和工具调用方面的能力，研究多智能体协作机制与自主规划算法。</p>
-            </div>
-            <div class="research-item">
-                <h3>软件工程</h3>
-                <p>代码生成、自动化测试、软件bug检测与修复、代码审查自动化。</p>
-            </div>
-            <div class="research-item">
-                <h3>自动驾驶</h3>
-                <p>轨迹预测、车道变换决策、路径规划、驾驶员建模与仿真。</p>
-            </div>
-        </section>
-
-        <section id="publications">
-            <h2>发表论文</h2>
-            <div class="pub-item">
-                <p class="pub-title">S3MOT: Semantic-aware Social Sparse Multi-Object Tracking in Roadside Sensor Networks</p>
-                <p class="pub-authors">Yang Fu, Lin Ma, Zebang Shen, <strong>Yang Fu</strong>, Teng Li, Chongzhao Jia, Teng Li</p>
-                <p class="pub-venue">IEEE ITSC 2024 （CCF-B 推荐）</p>
-                <p class="pub-highlight">多目标跟踪 · 语义感知 · 路边传感器网络</p>
-            </div>
-            <div class="pub-item">
-                <p class="pub-title">EALO: Edge-assisted Learning-based Trajectory Prediction with Social-aware Driving Field for Autonomous Vehicles</p>
-                <p class="pub-authors"><strong>Yang Fu</strong>, Lin Ma, Chongzhao Jia, Zhi Liu, Teng Li, Yunli Wang, Ping</p>
-                <p class="pub-venue">IEEE IV 2024（CCF-B 推荐）</p>
-                <p class="pub-highlight">轨迹预测 · 自动驾驶 · 边缘计算 · 社交感知驾驶场</p>
-            </div>
-            <div class="pub-item">
-                <p class="pub-title">Lane Change Prediction and Planning with Semantic Enhanced Lane-level Map</p>
-                <p class="pub-authors"><strong>Yang Fu</strong>, Lin Ma, Chongzhao Jia, Yunli Wang, Ping, Teng Li</p>
-                <p class="pub-venue">IEEE ICASSP 2024（CCF-B 推荐）</p>
-                <p class="pub-highlight">车道变换预测 · 语义地图 · 自动驾驶决策</p>
-            </div>
-            <div class="pub-item">
-                <p class="pub-title">Cooperative Trajectory Prediction and Planning for Autonomous Vehicles via Dynamic Static Multi-Agent Communication</p>
-                <p class="pub-authors"><strong>Yang Fu</strong>, Lin Ma, Chongzhao Jia, Yunli Wang, Ping, Teng Li</p>
-                <p class="pub-venue">IEEE IV 2023（CCF-B 推荐）</p>
-                <p class="pub-highlight">多智能体协同 · 轨迹预测与规划 · 自动驾驶</p>
-            </div>
-        </section>
-
-        <section id="projects">
-            <h2>项目经历</h2>
-            <div class="project-item">
-                <div class="project-header">
-                    <h3>ClawTeam — 多智能体协作框架</h3>
-                    <div class="links">
-                        <a href="https://github.com/HKUDS/ClawTeam">GitHub</a>
-                    </div>
+                <div class="research-header">
+                    <h3>ACCUSYNTH： 高保真可控的眼底图像生成</h3>
+                    <span class="badge">第一作者 · 一区在投</span>
                 </div>
-                <p>开发了一个框架无关的多智能体协调 CLI 工具，支持 tmux/subprocess/WSH 后端，可视化看板，团队生命周期管理，消息传递与任务管理。</p>
+                <p>基于 Diffusion Model 与 ControlNet 的医学图像合成，实现像素级精准可控的眼底图像生成。</p>
+                <ul class="research-highlights">
+                    <li><strong>多尺度语义增强模块（Multi-Sem）</strong>：在解码器多个尺度上注入语义信息，解决标准扩散模型特征提取中丢失像素级细节的难题，确保生成图像保留临床解剖结构。</li>
+                    <li><strong>语义循环一致性机制（Sem-Cyc）</strong>：引入闭环反馈机制，通过预训练分割网络评估并优化生成图像与输入条件的一致性，实现像素级精准对齐。</li>
+                    <li><strong>SOTA 性能</strong>：在公开（REFUGE）和自建（BlurFundus）数据集上超越 ControlNet 等基线方法，SSIM 和 Dice Score 取得显著优势。</li>
+                </ul>
                 <div class="tech-tags">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Typer</span>
-                    <span class="tech-tag">Pydantic</span>
-                    <span class="tech-tag">Rich</span>
-                    <span class="tech-tag">Git Worktree</span>
-                    <span class="tech-tag">MCP</span>
-                </div>
-            </div>
-            <br>
-            <div class="project-item">
-                <div class="project-header">
-                    <h3>轨迹预测与车道变换决策系统</h3>
-                    <div class="links">
-                        <span class="tech-tag">研究项目</span>
-                    </div>
-                </div>
-                <p>设计并实现了基于图卷积网络和注意力机制的多智能体轨迹预测模型，提出社交感知驾驶场（Social-aware Driving Field）方法，在公开数据集上达到SOTA性能。</p>
-                <div class="tech-tags">
-                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Diffusion Models</span>
+                    <span class="tech-tag">Stable Diffusion</span>
+                    <span class="tech-tag">ControlNet</span>
                     <span class="tech-tag">PyTorch</span>
-                    <span class="tech-tag">GCN</span>
-                    <span class="tech-tag">Transformer</span>
-                    <span class="tech-tag">CUDA</span>
-                    <span class="tech-tag">SUMO</span>
+                    <span class="tech-tag">Cycle Consistency</span>
                 </div>
             </div>
-            <br>
-            <div class="project-item">
-                <div class="project-header">
-                    <h3>路边传感器网络多目标跟踪</h3>
-                    <div class="links">
-                        <span class="tech-tag">研究项目</span>
-                    </div>
+        </section>
+
+        <section id="internship">
+            <h2>实习经历</h2>
+            <div class="intern-item">
+                <div class="intern-header">
+                    <h3>上汽智己 · 算法实习生</h3>
+                    <span class="period">2026.01 – 2026.04</span>
                 </div>
-                <p>提出基于语义感知的多智能体稀疏跟踪算法（S3MOT），解决路边传感器网络中的目标关联与跟踪问题，提升了复杂场景下的跟踪精度与效率。</p>
+                <p class="company">上汽集团智能汽车</p>
+                <p>主导自研超轻量级 Agent 框架 IM-Nano，替代开源 OpenClaw 框架，解决代码臃肿、部署与扩展成本高的问题。</p>
+                <ul class="intern-highlights">
+                    <li><strong>Agent 认知与决策闭环</strong>：落地 ReAct 范式实现 LLM 与工具的多轮交互，深度集成 MCP 协议与自定义 Skills 热插拔；设计本地持久化的长短期双层记忆模型，结合 Heartbeat 周期唤醒与 Cron 调度，实现跨会话上下文感知。</li>
+                    <li><strong>异步通信与多通道网关</strong>：引入 MessageBus 异步双向队列，基于 WebSocket 长连接（集成 Lark-oapi SDK）实现内网灵活部署；构建统一路由分发机制。</li>
+                    <li><strong>三层安全沙箱</strong>：网络层白名单AllowFrom、系统层 restrictToWorkspace、指令层自研命令分级动态过滤，精准拦截高危操作。</li>
+                    <li><strong>成果</strong>：核心代码较 OpenClaw 缩减约 99%；三层安全沙箱实现工作区越权访问与高危 Shell 指令约 95% 的精准拦截。</li>
+                </ul>
                 <div class="tech-tags">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">多目标跟踪</span>
-                    <span class="tech-tag">传感器融合</span>
-                    <span class="tech-tag">卡尔曼滤波</span>
-                </div>
-            </div>
-            <br>
-            <div class="project-item">
-                <div class="project-header">
-                    <h3>大规模语言模型推理优化</h3>
-                    <div class="links">
-                        <span class="tech-tag">研究项目</span>
-                    </div>
-                </div>
-                <p>针对 LLM 推理效率问题，探索了KV cache优化、投机解码等技术，显著降低推理延迟与显存占用。</p>
-                <div class="tech-tags">
-                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">ReAct</span>
+                    <span class="tech-tag">MCP</span>
+                    <span class="tech-tag">WebSocket</span>
                     <span class="tech-tag">LLM</span>
-                    <span class="tech-tag">CUDA</span>
-                    <span class="tech-tag">推理优化</span>
+                    <span class="tech-tag">Python</span>
+                </div>
+            </div>
+            <br>
+            <div class="intern-item">
+                <div class="intern-header">
+                    <h3>公安部第三研究所 · 算法实习生</h3>
+                    <span class="period">2025.07 – 2025.11</span>
+                </div>
+                <p class="company">上海市公安部第三研究所</p>
+                <p>针对政务服务和基层警务咨询场景的高频重复政策/法规查询，实现语义缓存系统降低推理成本。</p>
+                <ul class="intern-highlights">
+                    <li><strong>语义缓存架构（Semantic Caching）</strong>：引入 RedisVL 构建向量化语义缓存层，通过 Cosine Similarity 拦截重复语义请求，实现 Cache Hit 直接返回。</li>
+                    <li><strong>高精度检索优化（Reranking）</strong>：基于 Cross-Encoder（ModernBERT）的重排序模块，在向量粗排（Top-50）基础上进行二次精排。</li>
+                    <li><strong>全链路评估体系</strong>：开发 LLMEvaluator 自动化评估工具，监控缓存命中率与回答质量。</li>
+                    <li><strong>成果</strong>：高频查询响应延迟降低 60%+；节省约 40% TOKEN 推理成本；Recall@5 指标提升 15%。</li>
+                </ul>
+                <div class="tech-tags">
+                    <span class="tech-tag">RedisVL</span>
+                    <span class="tech-tag">Cross-Encoder</span>
+                    <span class="tech-tag">ModernBERT</span>
+                    <span class="tech-tag">LLM</span>
+                    <span class="tech-tag">Python</span>
                 </div>
             </div>
         </section>
 
         <section id="skills">
-            <h2>技能</h2>
+            <h2>个人技能</h2>
             <div class="skills-grid">
                 <div class="skill-category">
                     <h3>编程语言</h3>
                     <div class="skill-list">
                         <span class="skill-item">Python</span>
                         <span class="skill-item">C/C++</span>
-                        <span class="skill-item">Java</span>
-                        <span class="skill-item">JavaScript</span>
                         <span class="skill-item">SQL</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>工具与平台</h3>
-                    <div class="skill-list">
-                        <span class="skill-item">Git</span>
-                        <span class="skill-item">Docker</span>
-                        <span class="skill-item">Kubernetes</span>
-                        <span class="skill-item">ROS</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>AI / 机器学习</h3>
+                    <h3>AI / 深度学习</h3>
                     <div class="skill-list">
                         <span class="skill-item">PyTorch</span>
-                        <span class="skill-item">TensorFlow</span>
-                        <span class="skill-item">scikit-learn</span>
+                        <span class="skill-item">Transformers</span>
+                        <span class="skill-item">PEFT / LoRA</span>
+                        <span class="skill-item">Qwen2-1.5B 微调</span>
+                        <span class="skill-item">Diffusion Models</span>
                         <span class="skill-item">CUDA</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>其他</h3>
+                    <h3>Agent 开发</h3>
                     <div class="skill-list">
-                        <span class="skill-item">MATLAB/Simulink</span>
-                        <span class="skill-item">LaTeX</span>
-                        <span class="skill-item">Linux</span>
+                        <span class="skill-item">Prompt Engineering</span>
+                        <span class="skill-item">MCP 协议</span>
+                        <span class="skill-item">ReAct 范式</span>
+                        <span class="skill-item">多智能体协同</span>
+                        <span class="skill-item">WebSocket 通信</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>数据库</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">MySQL</span>
+                        <span class="skill-item">SQL Server</span>
+                        <span class="skill-item">Redis / RedisVL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>语言能力</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">英语 CET-6</span>
+                        <span class="skill-item">英文文献阅读</span>
+                        <span class="skill-item">算法复现</span>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section id="contact">
-            <h2>联系方式</h2>
-            <p style="color: var(--text-light); font-size: 0.95rem;">
-                邮箱：<a href="mailto:twinkleyang1@gmail.com">twinkleyang1@gmail.com</a><br>
-                GitHub：<a href="https://github.com/twinkleyang1">github.com/twinkleyang1</a>
-            </p>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>杨馥 · 香港大学 · <a href="https://github.com/twinkleyang1">GitHub</a></p>
+            <p>杨张杰 · 上海 · <a href="mailto:2421843678@qq.com">2421843678@qq.com</a></p>
         </div>
     </footer>
 </body>
